@@ -6,6 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "build:dev": "env-cmd -f .env.development next build",
+    "start:dev": "env-cmd -f .env.development next start",
+    "build:stag": "env-cmd -f .env.staging next build",
+    "start:stag": "env-cmd -f .env.staging next start",
+    "build:prod": "env-cmd -f .env.production next build",
+    "start:prod": "env-cmd -f .env.production next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +19,7 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
+    "env-cmd": "^10.1.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",

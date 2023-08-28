@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  nextjs:
+    container_name: next-js-base
+    build:
+      context: .
+      dockerfile: docker/prod.Dockerfile
+      target: builder
+    hostname: localhost
+    command: yarn start:prod
+    ports:
+      - 3221:3000

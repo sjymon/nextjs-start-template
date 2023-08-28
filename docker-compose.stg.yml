@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  nextjs:
+    container_name: next-js-base
+    build:
+      context: .
+      dockerfile: docker/stg.Dockerfile
+      target: builder
+    hostname: localhost
+    command: yarn start:stag
+    ports:
+      - 3221:3000
