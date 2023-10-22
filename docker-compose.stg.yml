@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  nextjs:
+  nextjs-stag:
     container_name: next-js-base
     build:
       context: .
