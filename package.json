@@ -1,32 +1,42 @@
 {
   "name": "nextjs-start-template",
   "version": "0.1.0",
+  "author": "Otto",
+  "license": "MIT",
+  "description": "Next.js starter template",
   "private": true,
+  "engines": {
+    "node": ">=18.16.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "build:dev": "env-cmd -f .env.development next build",
-    "start:dev": "env-cmd -f .env.development next start",
+    "start:dev": "next start",
     "build:stag": "env-cmd -f .env.staging next build",
-    "start:stag": "env-cmd -f .env.staging next start",
+    "start:stag": "next start",
     "build:prod": "env-cmd -f .env.production next build",
-    "start:prod": "env-cmd -f .env.production next start",
+    "start:prod": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.5.7",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "env-cmd": "^10.1.0",
-    "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
     "next": "13.4.19",
-    "postcss": "8.4.28",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.8",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^13.5.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
   }
 }
